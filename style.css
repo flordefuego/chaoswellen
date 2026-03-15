@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family: Basteleur;
+    src: url(assets/Basteleur-Moonlight.ttf);
+  }
+
+
+
+html, body {
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            font-family: Basteleur;
+        }
+        
+        #hydraCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1; 
+            pointer-events: none; /* Permite interactuar con A-Frame */
+        }
+
+ a-scene {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+.container{
+font-family: Monospace;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+z-index: 7001;
+padding: 5%;
+max-width: 600px;
+margin: auto;
+width: 50%;
+padding: 10px;
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: azure;
+background-color: rgba(0, 0, 0, 0.9);
+border-style: outset;
+visibility: visible;
+
+}
+
+.instrucciones{
+font-family: Tahoma;  
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+z-index: 7001;
+max-width: 600px;
+margin: auto;
+width: 50%;
+padding: 10px;
+position: absolute;
+top: 90%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: azure;
+background-color: rgba(0, 0, 0, 0.9);
+visibility: visible;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .textContainer {
+    display: none;
+  }
+
+}
+
+
